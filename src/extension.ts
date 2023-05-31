@@ -5,7 +5,7 @@ import * as path from "path";
 import * as http from "http";
 
 function showMessage(message: string) {
-  vscode.window.setStatusBarMessage(message,1000);
+  vscode.window.setStatusBarMessage(message,3000);
 }
 
 function isUnityProject(): boolean {
