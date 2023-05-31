@@ -1,0 +1,1 @@
+this extesion will trigger Unity to compile when saved file in VS Code.
