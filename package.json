@@ -11,7 +11,9 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "workspaceContains:ProjectSettings/"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [

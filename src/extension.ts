@@ -8,15 +8,6 @@ function showMessage(message: string) {
   vscode.window.setStatusBarMessage(message,3000);
 }
 
-function isUnityProject(): boolean {
-  if (vscode.workspace.workspaceFolders) {
-    let workspaceRoot = vscode.workspace.workspaceFolders[0].uri.fsPath;
-    let assetsPath = path.join(workspaceRoot, "Assets");
-    let projectSettingsPath = path.join(workspaceRoot, "ProjectSettings");
-    return fs.existsSync(assetsPath) && fs.existsSync(projectSettingsPath);
-  }
-  return false;
-}
 
 function unityCompile() {
   let port = vscode.workspace
@@ -32,7 +23,7 @@ export function activate(context: vscode.ExtensionContext) {
     let enabled = vscode.workspace
       .getConfiguration("unity-auto-compile")
       .get("enabled");
-    if (enabled&&isUnityProject()) {
+    if (enabled) {
       unityCompile();
     }
   });
