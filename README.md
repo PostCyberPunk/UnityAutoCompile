@@ -2,12 +2,13 @@
 this extesion will trigger Unity to compile when saved a file in VS Code.
 ![Animation](https://github.com/PostCyberPunk/UnityAutoCompile/assets/134976996/cb126a25-b72b-4152-898c-06ae374a7ffe)
 ## Requirement
-Install [this package](https://github.com/PostCyberPunk/UnityAutoCompile/releases/download/0.0.1/VSCodeAutoCompile.unitypackage) to your projcet
+Install [this package](https://github.com/PostCyberPunk/VSCodeUnityAutoCompliation) to your projcet
 
 ## Known isssues
 ~~You have to force compile once before the auto-compilation works~~
 
-If there is errors in Unity the auto compilation will stop
+~~If there is errors in Unity the auto compilation will stop~~
+
 
 ## Commands
 Unity Force Compile: unity-auto-compile.compile
