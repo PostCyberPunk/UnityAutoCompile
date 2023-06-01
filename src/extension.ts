@@ -13,7 +13,7 @@ function unityCompile() {
   let port = vscode.workspace
     .getConfiguration("unity-auto-compile")
     .get("port");
-  http.get("http://127.0.0.1:" + port + "/refresh", (res) => {});
+  http.get("http://127.0.0.1:" + port + "/refresh",{timeout:1000});
   showMessage("Unity Compiled");
 }
 
