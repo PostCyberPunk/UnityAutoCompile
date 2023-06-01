@@ -1,6 +1,6 @@
 # Unity Auto Compile
 this extesion will trigger Unity to compile when saved a file in VS Code.
-![Animation](https://github.com/PostCyberPunk/UnityAutoCompile/assets/134976996/cb126a25-b72b-4152-898c-06ae374a7ffe)
+![Animation](https://github.com/PostCyberPunk/VSCodeUnityAutoCompliation)
 ## Requirement
 Install [this package](https://github.com/PostCyberPunk/UnityAutoCompile/releases/download/0.0.1/VSCodeAutoCompile.unitypackage) to your projcet
 
