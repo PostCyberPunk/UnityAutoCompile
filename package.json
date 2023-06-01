@@ -2,9 +2,12 @@
   "name": "unity-auto-compile",
   "displayName": "Unity Auto Compilation",
   "description": "Unity will auto-compiles in background when code save files",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "PostCyberPunk",
-  "repository": {"type": "git","url": "https://github.com/PostCyberPunk/UnityAutoCompile.git"},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PostCyberPunk/UnityAutoCompile.git"
+  },
   "engines": {
     "vscode": "^1.78.0"
   },
