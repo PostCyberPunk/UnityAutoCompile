@@ -5,20 +5,18 @@ import * as path from "path";
 import * as http from "http";
 
 function showMessage(message: string) {
-  vscode.window.setStatusBarMessage(message,3000);
+  vscode.window.setStatusBarMessage(message, 3000);
 }
-
 
 function unityCompile() {
   let port = vscode.workspace
     .getConfiguration("unity-auto-compile")
     .get("port");
-  http.get("http://127.0.0.1:" + port + "/refresh",{timeout:1000});
+  http.get("http://127.0.0.1:" + port + "/refresh", {timeout: 1000});
   showMessage("Unity Compiled");
 }
 
 export function activate(context: vscode.ExtensionContext) {
-
   let onSave = vscode.workspace.onDidSaveTextDocument((document) => {
     let enabled = vscode.workspace
       .getConfiguration("unity-auto-compile")
