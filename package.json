@@ -2,7 +2,7 @@
   "name": "unity-auto-compile",
   "displayName": "Unity Auto Compilation",
   "description": "Unity will auto-compiles in background when code save files",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publisher": "PostCyberPunk",
   "repository": {
     "type": "git",
@@ -45,6 +45,13 @@
       }
     }
   },
+  "keywords": [
+    "unity",
+    "compile",
+    "auto",
+    "background",
+    "Unity3D"
+  ],
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
