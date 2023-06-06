@@ -18,6 +18,9 @@ function unityCompile() {
 
 export function activate(context: vscode.ExtensionContext) {
   let onSave = vscode.workspace.onDidSaveTextDocument((document) => {
+    if (path.parse(document.fileName).base === "settings.json") {
+      return;
+    }
     let enabled = vscode.workspace
       .getConfiguration("unity-auto-compile")
       .get("enabled");
